@@ -17,6 +17,15 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.343);
 }
 
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    border-radius: 50%;
+}
+
 footer {
     color: white;
     text-align: center;
