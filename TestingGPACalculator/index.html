@@ -9,26 +9,33 @@
 <body>
     <div class="container">
         <h1>GPA Calculator</h1>
-        <form id="gpa-form">
-            <div class="course">
-                <label for="course1">Course 1 Grade:</label>
-                <input type="text" id="course1" class="grade" required>
+        <div id="semester-container">
+            <div class="semester">
+                <h2>Semester 1</h2>
+                <form class="gpa-form">
+                    <div class="course">
+                        <label for="course1">Course 1 Grade:</label>
+                        <input type="text" id="course1" class="grade" required>
+                    </div>
+                    <div class="course">
+                        <label for="course2">Course 2 Grade:</label>
+                        <input type="text" id="course2" class="grade" required>
+                    </div>
+                    <div class="course">
+                        <label for="course3">Course 3 Grade:</label>
+                        <input type="text" id="course3" class="grade" required>
+                    </div>
+                    <div class="course">
+                        <label for="course4">Course 4 Grade:</label>
+                        <input type="text" id="course4" class="grade" required>
+                    </div>
+                    <button type="button" class="add-course" onclick="addCourse(this)">Add Course</button>
+                    <div class="result"></div>
+                </form>
             </div>
-            <div class="course">
-                <label for="course2">Course 2 Grade:</label>
-                <input type="text" id="course2" class="grade" required>
-            </div>
-            <div class="course">
-                <label for="course3">Course 3 Grade:</label>
-                <input type="text" id="course3" class="grade" required>
-            </div>
-            <div class="course">
-                <label for="course4">Course 4 Grade:</label>
-                <input type="text" id="course4" class="grade" required>
-            </div>
-            <button type="button" onclick="calculateGPA()">Calculate GPA</button>
-        </form>
-        <div id="result"></div>
+        </div>
+        <button type="button" id="add-semester" onclick="addSemester()">Add Semester</button>
+        <div id="overall-result"></div>
     </div>
     <script src="script.js"></script>
 </body>
